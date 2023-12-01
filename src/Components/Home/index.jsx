@@ -14,6 +14,7 @@ const Home = () => {
         <div className="home_row">
           {/* product  */}
           <Product
+          id={"12312312"}
             title="Sony PS5® Console – Marvel’s Spider-Man 2 Limited Edition Bundle"
             price={"62,990"}
             image={
@@ -22,6 +23,7 @@ const Home = () => {
             rating={4.5}
           />
           <Product
+           id={"67548390"}
             title="Apple 2023 MacBook Pro Laptop M2 Max chip."
             price={"2,63,399"}
             image={
@@ -34,6 +36,7 @@ const Home = () => {
         <div className="home_row">
           {/* product  */}
           <Product
+           id={"90784317"}
             title="Apple iPhone 15 Pro Max (256 GB) - Blue Titanium."
             price={"1,59,900"}
             image={
@@ -43,6 +46,7 @@ const Home = () => {
           />
           {/* product  */}
           <Product
+           id={"29674301"}
             title="Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder 5 lb (+10% Extra), 2.5 kg."
             price={"6,884"}
             image={
@@ -52,6 +56,7 @@ const Home = () => {
           />
           {/* product  */}
           <Product
+           id={"68390327"}
             title="Air Jordan 1 Low OG Shoes."
             price={"12,795"}
             image={
@@ -62,6 +67,7 @@ const Home = () => {
         </div>
         <div className="home_row">
           <Product
+           id={"44578312"}
             title="Hisense 305 cm (120 inches) Trichrom ALR Screen Series 4K Ultra HD Smart Laser TV 120L9HE (Black)."
             price={"4,99,999"}
             image={

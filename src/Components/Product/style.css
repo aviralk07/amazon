@@ -17,6 +17,11 @@
   position: relative;
   top: 160px;
 }
+.product:hover {
+  background-color: #000000 !important;
+  box-shadow: 0 0 50px 0 rgb(152, 203, 255);
+  color: white;
+}
 
 .product > img {
   margin-top: 20px;
@@ -71,7 +76,22 @@
   outline: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.product_title_container {
+  position: relative;
+}
 
+.expand_icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ff0000;
+  font-size: 21px; /* Adjust the size as needed */
+}
+.expand_icon:hover {
+  color: aliceblue;
+}
 
 @media only screen and (max-width: 768px) {
   .product {
@@ -125,4 +145,14 @@
   .product > button:focus {
     font-size: 12px;
   }
+  .expand_icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 15px; /* Adjust the size as needed */
+  }
+ 
 }

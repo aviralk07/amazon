@@ -1,20 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Button from "react-bootstrap/Button";
 import StarRatings from "react-star-ratings";
+import { useStateValue } from "../../StateProvider";
 
 const Product = ({ id, title, image, price, rating }) => {
+  const [{ basket }, dispatch] = useStateValue();
+  console.log("this is the basket >>>", basket);
+  const addToBasket = () => {
+    // dispatch the item ino the data layer
+    dispatch({
+      type: "Add_To_Basket",
+      items: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+  const maxLength = 30; // Set the maximum length for the title
+  const [showFullTitle, setShowFullTitle] = useState(false);
+
+  const displayedTitle = showFullTitle
+    ? title
+    : `${title.slice(0, maxLength)}...`;
+
+  const toggleTitle = () => {
+    setShowFullTitle(!showFullTitle);
+  };
+
   return (
     <div className="product">
       <div className="product_info">
-        <p className="product-p">{title}</p>
+        <div className="product_title_container" onClick={toggleTitle}>
+          <p className="product-p">{displayedTitle}</p>
+          {!showFullTitle && (
+            <span className="expand_icon">
+              &#9660; {/* Downward arrow or any other icon you prefer */}
+            </span>
+          )}
+        </div>
         <p className="product_price">
           <small> ₹</small>
           <strong>{price}</strong>
         </p>
         <div className="product_rating">
           <StarRatings
-         
             rating={rating}
             starRatedColor="#f39c12" // Color when rated
             starEmptyColor="#ecf0f1" // Color for empty stars
@@ -32,7 +65,9 @@ const Product = ({ id, title, image, price, rating }) => {
           background: "transparent!important",
         }}
       />
-      <Button variant="warning">Add to basket</Button>{" "}
+      <Button onClick={addToBasket} variant="warning">
+        Add to basket
+      </Button>{" "}
     </div>
   );
 };
