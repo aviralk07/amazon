@@ -16,7 +16,7 @@ const Home = () => {
           <Product
           id={"12312312"}
             title="Sony PS5® Console – Marvel’s Spider-Man 2 Limited Edition Bundle"
-            price={"62,990"}
+            price={62990}
             image={
               "https://cdn.mos.cms.futurecdn.net/8EvShgipkzT23s27rfyor6-1200-80.png"
             }
@@ -25,7 +25,7 @@ const Home = () => {
           <Product
            id={"67548390"}
             title="Apple 2023 MacBook Pro Laptop M2 Max chip."
-            price={"2,63,399"}
+            price={263399}
             image={
               "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Apple_MacBook_Pro_M2_Pro_M2_Max_2023.jpg"
             }
@@ -38,7 +38,7 @@ const Home = () => {
           <Product
            id={"90784317"}
             title="Apple iPhone 15 Pro Max (256 GB) - Blue Titanium."
-            price={"1,59,900"}
+            price={159900}
             image={
               "https://m.media-amazon.com/images/I/81fxjeu8fdL._SL1500_.jpg"
             }
@@ -48,7 +48,7 @@ const Home = () => {
           <Product
            id={"29674301"}
             title="Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder 5 lb (+10% Extra), 2.5 kg."
-            price={"6,884"}
+            price={6884}
             image={
               "https://m.media-amazon.com/images/I/61WD2RzBtBL._SL1200_.jpg"
             }
@@ -58,7 +58,7 @@ const Home = () => {
           <Product
            id={"68390327"}
             title="Air Jordan 1 Low OG Shoes."
-            price={"12,795"}
+            price={12795}
             image={
               "https://millenniumshoes.com/cdn/shop/products/AURORA_CZ0858-001_PHCFH001-2000_2_bd2feadf-54cf-43bd-8bc8-44a46c92b234_1200x.jpg?v=1686949022"
             }
@@ -69,7 +69,7 @@ const Home = () => {
           <Product
            id={"44578312"}
             title="Hisense 305 cm (120 inches) Trichrom ALR Screen Series 4K Ultra HD Smart Laser TV 120L9HE (Black)."
-            price={"4,99,999"}
+            price={499999}
             image={
               "https://m.media-amazon.com/images/I/91TDtZiFW4L._SL15000_.jpg"
             }

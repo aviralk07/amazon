@@ -18,3 +18,22 @@
   padding: 10px;
   border-bottom: 1px solid lightgrey;
 }
+@media (max-width: 768px) {
+  .checkout {
+   
+    overflow-x: hidden;
+  }
+  .checkout_tit {
+    flex-direction: row;
+  }
+  .checkout_ad {
+    width: 180px !important;
+    height: 100px;
+    margin-left: -1px;
+    position: relative;
+    left: -13px;
+  }
+  .checkout_title{
+    font-size: 15px;
+  }
+}
