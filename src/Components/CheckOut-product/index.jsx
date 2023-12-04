@@ -3,8 +3,20 @@ import "./style.css";
 import StarRatings from "react-star-ratings";
 import RemoveShoppingCartTwoToneIcon from "@mui/icons-material/RemoveShoppingCartTwoTone";
 import Button from "@mui/material/Button";
+import { useStateValue } from "../../StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating }) {
+  const [{ basket }, dispatch] = useStateValue();
+
+  // remove the item from basket
+  const removeFromBasket = () => {
+    // Dispatch the "Remove_From_Basket" action
+    dispatch({
+      type: "Remove_From_Basket",
+      id: id,
+    });
+  };
+
   return (
     <div className="checkoutProduct">
       <img className="checkoutProduct_image" src={image} alt="" />
@@ -17,15 +29,19 @@ function CheckoutProduct({ id, image, title, price, rating }) {
         <div className="checkoutProduct_rating">
           <StarRatings
             rating={rating}
-            starRatedColor="#f39c12" // Color when rated
-            starEmptyColor="#C6D2D5" // Color for empty stars
-            starHoverColor="#003494" // Color on hover
+            starRatedColor="#f39c12"
+            starEmptyColor="#C6D2D5"
+            starHoverColor="#003494"
             numberOfStars={5}
             starDimension="20px"
             starSpacing="2px"
           />
         </div>
-        <Button className="btn-1-sc" variant="contained">
+        <Button
+          className="btn-1-sc"
+          variant="contained"
+          onClick={removeFromBasket}
+        >
           <span className="icon">
             <RemoveShoppingCartTwoToneIcon />
           </span>

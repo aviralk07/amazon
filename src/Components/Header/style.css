@@ -69,6 +69,10 @@
   margin-right: 10px;
 }
 
+.login_link {
+  text-decoration: none;
+}
+
 /* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
   .header-logo {
