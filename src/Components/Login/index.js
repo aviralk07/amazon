@@ -33,7 +33,7 @@ const Login = () => {
             alt=""
             animate={{
               x: [-200, 200, -200],
-              scale: [1, 1.5, 1],
+              scale: [1, 1.7, 1],
               filter: [
                 "hue-rotate(0deg)",
                 "hue-rotate(120deg)",

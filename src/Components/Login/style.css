@@ -17,19 +17,19 @@
 
 @keyframes background {
   0% {
-    background-color: aqua;
+    background-color: #8e44ad;
   }
   25% {
-    background-color: #9a1663;
+    background-color: #f73aa8;
   }
   50% {
     background-color: #e0144c;
   }
   75% {
-    background-color: #ff5858;
+    background-color: #2ecc71;
   }
   100% {
-    background-color: #ff97c1;
+    background-color: #aaaaaa;
   }
 }
 
@@ -240,8 +240,8 @@ button {
 .pancakes-text {
   font-size: 5em;
 
-  color: SandyBrown;
-  text-shadow: 0.02em 0.02em 0 Brown, 0 0 0.5em violet;
+  color: rgb(246, 147, 61);
+  text-shadow: 0.02em 0.06em 0.06rem rgb(163, 31, 31), 0 0 0.5em violet;
 }
 
 h5 {
